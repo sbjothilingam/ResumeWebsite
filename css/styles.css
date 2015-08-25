@@ -1,0 +1,92 @@
+/* CSS Document */
+#up{
+	height: 30px;
+	border-style: solid;
+	border-color: black;
+	border-width: 0 0 1px 0;
+	border-radius: 25px;
+}
+#down{
+	height: 30px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px 0 0 0;
+	border-radius: 25px;
+}
+#headings{
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+}
+button{
+	border-radius: 40px;
+}
+#images-roll > a:hover{
+	background:none;
+}
+#images-roll > a{
+	background:none;
+}
+#about-me > div > img{
+	height:150px;
+	width:150px;
+}
+a:hover{
+	cursor:pointer;
+}
+#proj-academic-list, #proj-android-list{
+	background-color:#CCC;
+	margin-bottom:30px;
+}
+#acad-proj:hover, #and-proj:hover{
+	cursor:pointer;
+}
+#ac-proj1, #ac-proj2, #ac-proj3, #ac-proj4, #ac-proj5, #ad-proj1, #ad-proj2{
+	display:none;
+}
+
+#menu{
+	margin-bottom:30px;
+}
+	
+#tech-skills-head{
+	background-color:#CCC;
+}
+
+#tech-prog, #tech-web, #tech-data, #tech-env, #tech-test, #tech-os, #tech-mob{
+	cursor:pointer;
+}
+
+#nav{
+	position:fixed;
+}
+
+#step-down, #step-up{
+	margin-top:150px;
+	margin-bottom:150px;
+}
+
+#step-down:hover, #step-up:hover{
+	background:none;
+}
+
+
+#linkedin:hover{
+	cursor:pointer;
+}
+
+#tour{
+	margin-left:400px;
+}
+
+#welcome{
+	position:relative;
+}
+
+#welcome-msg{
+	position:absolute;
+	right:0px;
+	top:-150px;
+}
+
+#start, #nullname, #nullemail, #validemail{
+	display:none;
+}

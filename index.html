@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Suresh Babu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js"></script>
+  <script type="application/javascript" src="scripts/functions.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+  <link href="css/styles.css" rel="stylesheet"/>
+<body>
+<ul class="nav nav-pills nav-stacked pull-left" id="nav">
+	<li id="step-up"><a onClick="goDown()"><span class="glyphicon glyphicon-chevron-up"></span></a></li>
+	<li id="step-down"><a onClick="goUp()"><span class="glyphicon glyphicon-chevron-down"></span></a></li>
+</ul>
+
+<div class="container">
+	<div id="start" class="modal fade" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Welcome to Suresh's website</h3>
+                    <p>Please enter your name</p>
+                </div>
+                <div class="modal-body">
+                    <div id="name" >
+                        <label>Name:</label>
+                        <input type="text" id="startname">
+                        <label class="text-danger" id="nullname">*Enter your name</label>
+                    </div>            
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success pull-right" onClick="startValidate()">Enter</button>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="jumbotron" align="center" id="jumbo">
+    	<h1>Suresh's Website</h1>
+        <div id="welcome">
+        	<h4 id="welcome-msg">Hello</h4>
+        </div>
+        <button class="btn-lg btn-success" onClick="goTour()" id="taketour">Take a Tour</button></p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="text-center" id="menu">
+        <div class="btn-group-lg">
+            <button id="aboutbutton" type="button" class="btn btn-primary btn-lg" onClick="changeFocus('#about-me')" data-toggle="popover" data-placement="bottom" data-content="Want to know about me? Click" data-trigger="hover">About Me</button>
+            <button id="edubutton" type="button" class="btn btn-primary btn-lg" onClick="changeFocus('#edu-info')" data-toggle="popover" data-placement="bottom" data-content="Want to know about my educational details? Click" data-trigger="hover">My Education Details</button>
+            <button id="workbutton" type="button" class="btn btn-primary btn-lg" onClick="changeFocus('#work-exp')" data-toggle="popover" data-placement="bottom" data-content="Want to know where I worked and where I am working now? Click" data-trigger="hover">My Work Experience</button>
+            <button id="projbutton" type="button" class="btn btn-primary btn-lg" onClick="changeFocus('#proj')" data-toggle="popover" data-placement="bottom" data-content="Want to know about projects which I did? Click" data-trigger="hover">My Projects</button>
+            <button id="techbutton" type="button" class="btn btn-primary btn-lg" onClick="changeFocus('#tech-skills')" data-toggle="popover" data-placement="bottom" data-content="Want to know my techical skills? Click" data-trigger="hover">My Technical Skills</button>
+            <button id="cvbutton" type="button" class="btn btn-primary btn-lg" onClick="showResume()" data-toggle="popover" data-placement="bottom" data-content="Want to take a look at my full resume? Click" data-trigger="hover">My CV</button>
+            <button id="contactbutton" type="button" class="btn btn-primary btn-lg" onClick="changeFocus('#contact-info')" data-toggle="popover" data-placement="bottom" data-content="Want to contact me? Click" data-trigger="hover">My Contact Info</button>        </div>
+    </div>
+</div>
+    <br>
+<div class="container">
+    <div class="carousel slide" id="images-roll" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#images-roll" data-slide-to="0" class="active"></li>
+            <li data-target="#images-roll" data-slide-to="1"></li>
+            <li data-target="#images-roll" data-slide-to="2"></li>
+            <li data-target="#images-roll" data-slide-to="3"></li>
+            <li data-target="#images-roll" data-slide-to="4"></li>
+            <li data-target="#images-roll" data-slide-to="5"></li>
+            <li data-target="#images-roll" data-slide-to="6"></li>
+            <li data-target="#images-roll" data-slide-to="7"></li>
+            <li data-target="#images-roll" data-slide-to="8"></li>
+            <li data-target="#images-roll" data-slide-to="9"></li>
+            <li data-target="#images-roll" data-slide-to="10"></li>
+            <li data-target="#images-roll" data-slide-to="11"></li>
+            <li data-target="#images-roll" data-slide-to="12"></li>
+            <li data-target="#images-roll" data-slide-to="13"></li>
+            <li data-target="#images-roll" data-slide-to="14"></li>
+            <li data-target="#images-roll" data-slide-to="15"></li>
+            <li data-target="#images-roll" data-slide-to="16"></li>
+            <li data-target="#images-roll" data-slide-to="17"></li>
+            <li data-target="#images-roll" data-slide-to="18"></li>
+            <li data-target="#images-roll" data-slide-to="19"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/rit.jpg" width="460" height="340" style="width:50%  ; margin:auto">
+            </div>
+            <div class="item">
+                <img src="images/Anna.png" width="460" height="340" style="width:50% ; margin:auto">
+            </div>
+            <div class="item">
+                <img src="images/android.jpg" width="460" height="340" style="width:50% ; margin:auto">
+            </div>
+            <div class="item">
+                <img src="images/java.jpg" width="460" height="340" style="width:50%  ; margin:auto">
+            </div>
+            <div class="item">
+                <img src="images/c++.png" width="460" height="340" style="width:50% ; margin:auto">
+            </div>
+            <div class="item">
+                <img src="images/python.png" width="460" height="340" style="width:50% ; margin:auto">
+            </div>
+            <div class="item">
+                <img src="images/csharp.png" width="460" height="340" style="width:50%  ; margin:auto">
+            </div>
+            <div class="item">
+                <img src="images/html.jpg" width="460" height="340" style="width:50% ; margin:auto">
+            </div>
+            <div class="item">
+                <img src="images/css.jpg" width="460" height="340" style="width:50% ; margin:auto">
+            </div>
+            <div class="item">
+                <img src="images/js.jpg" width="460" height="340" style="width:50%  ; margin:auto">
+            </div>
+            <div class="item">
+                <img src="images/jquery.png" width="460" height="340" style="width:50% ; margin:auto">
+            </div>
+            <div class="item">
+                <img src="images/jsp.jpg" width="460" height="340" style="width:50% ; margin:auto">
+            </div>
+            <div class="item">
+                <img src="images/bootstrap.jpg" width="460" height="340" style="width:50%  ; margin:auto">
+            </div>
+            <div class="item">
+                <img src="images/ajax.jpg" width="460" height="340" style="width:50% ; margin:auto">
+            </div>
+            <div class="item">
+                <img src="images/mongo.png" width="460" height="340" style="width:50% ; margin:auto">
+            </div>
+            <div class="item">
+                <img src="images/mysql.png" width="460" height="340" style="width:50%  ; margin:auto">
+            </div>
+            <div class="item">
+                <img src="images/oracle.png" width="460" height="340" style="width:50% ; margin:auto">
+            </div>
+            <div class="item">
+                <img src="images/prot.png" width="460" height="340" style="width:50% ; margin:auto">
+            </div>
+            <div class="item">
+                <img src="images/sel.png" width="460" height="340" style="width:50%  ; margin:auto">
+            </div>
+            <div class="item">
+                <img src="images/windows.jpg" width="460" height="340" style="width:50% ; margin:auto">
+            </div>
+        </div>
+  		<a class="left carousel-control" href="#images-roll" role="button" data-slide="prev">
+        	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#images-roll" role="button" data-slide="next">
+        	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+    <br>
+    <br>
+<div class="container">
+    <div class="row" id="about-me">
+    	<div class="text-center">
+      		<hr>
+          	<h1>About Me</h2>
+          	<hr>
+       	</div>
+      	</br>
+        <div class="media">
+        	<img src="images/small/prof-pic.jpg" class="media-object pull-left">
+            <div class="media-body">
+            	<p><big> I am a graduate Computer science student. My passion is with the computer science field.</big></p>
+                         <p><big>I like to learn new technology and tools which helps me in solving complex problems as elegantly as possible.</big></p>
+                         <p><big><a onClick="showResume()">View my full resume</a> for details or <a onClick="changeFocus('#contact-info')">Contact me</a>.</big></p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row" id="edu-info">
+        	<div class="text-center">
+            	<hr>
+                <h1>My Education Details</h2>
+                <hr>
+            </div>
+            </br>
+            <table class="table table-striped">
+                <tr>
+                    <td>
+                        <img src="images/small/rit.jpg" class="img-rounded" width="75" height="75">
+                    </td>
+                    <td>
+                        <p><b>Master of Science in Computer Science</b></p>
+                        <p>Rochester Institute of Technology</p>
+                        <p><b>GPA : 3.6/4</b></p>
+                    </td>
+                    <td>
+                        <p><b>Rochester, NY, USA</b></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/small/Anna.png" class="img-rounded" width="75" height="75">
+                    </td>
+                    <td>
+                        <p><b>Bachelors of Technology in Information Technology</b></p>
+                        <p>Sri Venkateswara College of Engineering, Anna Univaersity</p>
+                        <p><b>CGPA : 6.53/10</b></p>
+                    </td>
+                    <td>
+                        <p>Chennai, India</p>
+                        <p>May 2012</p>
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row" id="work-exp">
+    	<div class="text-center">
+            <hr>
+            <h1>My Work Experience</h2>
+      		<hr>
+       	</div>
+       	</br>
+    	<!--<div class="media">
+        	<img src="images/small/ehealth.jpg" class="media-object pull-left">
+            <div class="media-body">-->
+            	<table>
+                	<tr>
+                    	<td>
+                        	<img src="images/small/ehealth.jpg" width="100" height="100">
+                        </td>
+                    	<td>
+                            <h4>Software Development Intern</h4>
+                            <p>
+                            	<ul>
+					 <li>Working as a member of an agile scrum team, performing tasks to contribute team success.</li>
+                                    <li>Performing functional and regression testing of commercialized application platform.</li>
+                                    <li>Working on development of RMS(Referral Management Solution) and RMS CE(Cloud Edition) a service of eHealth Technologies that allows a physician to refer patients to other physicians using eHealth Referral Portal Service, secure communication between referring physician and treating physician, sending and receiving patient records securely, retrieving patient records using eHealth Records Retrieval Service and manage the overall patient referral process. </li>
+                                    <li>Developing automation E2E(End-to-End) test using <b>Selenium IDE</b> to test RMS application which is developed using <b>ASP.NET</b> as front-end and <b>Microsoft SQL Server</b> as back-end.</li>
+                                    <li>Developing automation E2E(End-to-End) test using <b>Protractor</b> and unit testing using <b>Jasmine</b> test runner with <b>Karma</b> testing framework to test RMS CE which is developed using <b>AngularJS</b> as front-end and <b>MongoDB</b> as back-end.</li>
+					 <li><b>Technologies used : AngularJS, MongoDB, jQuery, C#.NET, SQL, Karma, Jasmine, Protractor, Selenium IDE, Visual Studio.</b>
+					 </ul>
+                            </p>
+                        </td>
+                        <td>
+                        	<p><strong>Januray 2015 - Present</strong></p>
+                            <p><strong>Rochester, NY, USA</strong></p>
+                        </td>
+                    </tr>
+                </table>
+            <!--</div>
+        </div>-->
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row" id="proj">
+    	<div class="text-center">
+        	<hr>
+    		<h1>My Projects</h1>
+            <hr>
+        </div>
+        <br>
+        <div class="col-sm-12" id="proj-academic-list">
+        	<h2>Academic projects<small><span class="glyphicon glyphicon-plus pull-right" id="acad-proj" onClick="showAcademicProjects()"></span></small></h2>
+        </div>
+        <div class="col-sm-4" id="ac-proj1">
+        	<div class="media">
+        		<img class="img-thumbnail pull-left" src="images/small/rit.jpg">
+                <div class="media-body">
+        			<h4>Secured Distributed Group Communication with leader election (Distributed Systems Course)</h4>
+                </div>
+            </div>
+            <p>Implemented a secure centralized authentication system for distributed group communication with effective Bully-Algorithm for electing a new leader when necessary using <b>Java Socket Programming</b>.
+            </p>
+        </div>
+        <div class="col-sm-4" id="ac-proj2">
+        	<div class="media">
+        		<img class="img-thumbnail pull-left" src="images/small/rit.jpg">
+                <div class="media-body">
+        			<h4>Big Data Analytics Project (Big Data Analytics Course)</h4>
+               	</div>
+            </div>
+            <p>Mined a Portuguese Banking Institution Dataset to help the bank with its marketing campaign on customers by following CRISP model for Data Mining. Used <b>WEKA</b> tool and wrote <b>Java</b> programs for data mining.
+            </p>
+        </div>
+        <div class="col-sm-4" id="ac-proj3">
+        	<div class="media">
+        		<img class="img-thumbnail pull-left" src="images/small/rit.jpg">
+                <div class="media-body">
+        			<h4>Social Networking Ad suggestion (Big Data Course)</h4>
+              	</div>
+            </div>
+            <p>Developed a Social Networking website and a shopping web site using <b>Html, CSS, Javascripts and Jsp</b> as front-end and <b>Oracle DB</b> as back-end.
+            </p>
+            <p>Data from shopping website was collected and mined to suggest deals to the users on their social networking website home page.
+            </p>
+        </div>
+        <div class="col-sm-4" id="ac-proj4">
+        	<div class="media">
+        		<img class="img-thumbnail pull-left" src="images/small/rit.jpg">
+                <div class="media-body">
+        			<h4>Snake and Ladder Multiplayer game (Advanced Java Programming Course)</h4>
+               	</div>
+            </div>
+            <p>Developed a multiplayer snake and ladder game using <b>Java RMI</b> and <b>Java Swings</b>.
+            </p>
+        </div>
+        <div class="col-sm-4" id="ac-proj5">
+        	<div class="media">
+        		<img class="img-thumbnail pull-left" src="images/small/rit.jpg">
+                <div class="media-body">
+        			<h4>Generic Puzzle Solver (Advanced C++ and Programming Design Course)</h4>
+               	</div>
+            </div>
+            <p>Implemented a generic puzzle solver which uses BFS(Breadth First Search) to solve puzzles like Jumping Peg, Towers of Hanoi using <b>C++</b>.
+            </p>
+        </div>
+        <br>
+    	<br>
+    	<br>
+    	<br>
+        <div class="col-sm-12" id="proj-android-list">
+        	<h2>Android projects <small><span class="glyphicon glyphicon-plus pull-right" id="and-proj" onClick="showAndroidProjects()"></span></small></h2>
+        </div>
+        <div class="col-sm-4" id="ad-proj1">
+        	<div class="media">
+        		<img class="img-thumbnail pull-left" src="images/small/android.jpg">
+                <div class="media-body">
+        			<h4>Teacher App</h4>
+               	</div>
+            </div>
+            <p>Developed an <b>Android application</b> for teachers to help manage different classes handled by them. Major functionalities of this app includes adding and removing of students and classes, taking attendance for a class, generating attendance report, unicast and broadcast a message to the students in the class.
+            </p>
+        </div>
+        <div class="col-sm-4" id="ad-proj2">
+        	<div class="media">
+        		<img class="img-thumbnail pull-left" src="images/small/android.jpg">
+                <div class="media-body">
+        			<h4>Dictionary App</h4>
+               	</div>
+            </div>
+            <p>Developed a dictionary application on <b>Android</b> which displays the meaning and related words for a given word by accessing an external dictionary <b>API</b> and parsing the <b>XML</b> file received.
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row" id="tech-skills">
+    	<div class="text-center">
+        	<hr>
+    		<h1>My Technical Skills</h1>
+            <hr>
+        </div>
+        <br>
+        <div class="col-sm-4" id="prog">
+            <div id="tech-skills-head">
+                <h4>Programming Languages<small><span class="glyphicon glyphicon-list pull-right" id="tech-prog" onClick="showTechBody('#tech-prog-data')"></span></small></h4>
+            </div>
+            <div id="tech-prog-data">
+            	<ul>
+                    <li>Java</li>
+                    <li>Python</li> 
+                    <li>C++</li>
+                    <li>C</li>
+                    <li>C#.NET</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-4" id="web">
+            <div id="tech-skills-head">
+                <h4>Web Programming<small><span class="glyphicon glyphicon-list pull-right" id="tech-web" onClick="showTechBody('#tech-web-data')"></span></small></h4>
+            </div>
+            <div id="tech-web-data">
+            	<ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>AngularJS</li> 
+                    <li>JSP</li> 
+                    <li>Javascripts</li> 
+                    <li>jQuery</li>
+                    <li>ASP.NET</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-4" id="data">
+            <div id="tech-skills-head">
+                <h4>Databases<small><span class="glyphicon glyphicon-list pull-right" id="tech-data" onClick="showTechBody('#tech-data-data')"></span></small></h4>
+            </div>
+            <div id="tech-data-data">
+            	<ul>
+                    <li>MySql</li>
+                    <li>Oracle</li> 
+                    <li>MongoDB</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-4" id="test">
+            <div id="tech-skills-head">
+                <h4>Testing<small><span class="glyphicon glyphicon-list pull-right" id="tech-test" onClick="showTechBody('#tech-test-data')"></span></small></h4>
+            </div>
+            <div id="tech-test-data">
+            	<ul>
+                    <li>Selenium IDE</li>
+                    <li>Protractor</li>
+                    <li>Karma</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-4" id="env">
+            <div id="tech-skills-head">
+                <h4>Development Environments<small><span class="glyphicon glyphicon-list pull-right" id="tech-env" onClick="showTechBody('#tech-env-data')"></span></small></h4>
+            </div>
+            <div id="tech-env-data">
+            	<ul>
+                    <li>Netbeans</li>
+                    <li>Eclipse</li> 
+                    <li>Visual Studio</li>
+                    <li>Dreamweaver</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-4" id="os">
+            <div id="tech-skills-head">
+                <h4>Operating Systems<small><span class="glyphicon glyphicon-list pull-right" id="tech-os" onClick="showTechBody('#tech-os-data')"></span></small></h4>
+            </div>
+            <div id="tech-os-data">
+            	<ul>
+                	<li>Linux</li>
+                    <li>Windows</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-4" id="mob">
+            <div id="tech-skills-head">
+                <h4>Mobile Application Development<small><span class="glyphicon glyphicon-list pull-right" id="tech-mob" onClick="showTechBody('#tech-mob-data')"></span></small></h4>
+            </div>
+            <div id="tech-mob-data">
+            	<ul>
+                	<li>Android</li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row" id="contact-info">
+    	<div class="text-center">
+        	<hr>
+    		<h1>My Contact Info</h1>
+            <hr>
+        </div>
+    	<div class="col-sm-6" id="mydetails">
+        	<div class="text-center">
+            	<h2><i>Suresh Babu</i></h2>
+                <span class="glyphicon glyphicon-envelope"></span> sbjothilingam@gmail.com
+                <br>
+                <img src="images/small/linkedin.jpg" onClick="goLinked()" id="linkedin">
+            </div>
+        </div>
+        <div class="col-sm-6" id="sendmessage">
+        	<form role="form">
+            	<h3><i>Leave a message :</i></h3>
+            	<div class="form-group">
+                	<label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                	<label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email">
+                    <label class="text-danger" id="validemail">* Enter a valid email</label>
+                </div>
+                <div class="form-group">
+                	<label for="msg">Message</label>
+                    <textarea class="form-control" row="5" id="msg"></textarea>
+                </div>
+                <button type="button" class="btn btn-success" id="send" onClick="sendMessageValidate()">
+                SEND <span class="glyphicon glyphicon-envelope"></span>  
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="scripts/Resume_Scripts.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="images/small/prof.jpg" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="application/javascript" src="scripts/functions.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+<title>Suresh Babu's Resume</title>
+<div class="container">
+<h1 align="center">My Resume</h1>
+<p align="center">Email: sbjothilingam@gmail.com</p>
+</div>
+<hr>
+</head>
+
+<body onLoad="display()">
+<div class="container">
+<div class="section" id="section_id">
+<h4>Objective</h4>
+</div>
+<div class="objective" id="objective_id" style="display:block">
+<p>Looking for internship/co-op opportunity in the field of software development. I am always eager to learn new tools and techniques to solve problems as elegantly as possible.</p>
+</div>
+<div class="section" id="section_id" onClick="showDiv('education_id')" style="cursor:pointer">
+  <h4>Education</h4>
+</div>
+<div class="education" id="education_id" style="display:none">
+<table border="3px" style="border:medium; border-style:solid">
+<tr>
+<td>
+<p><b>Master of Science in Computer Science</b></p>
+<p>Rochester Institute of Technology</p>
+<p><b>GPA: 3.6/4</b></p>
+</td>
+<td>
+<p><b>Rochester, NY, USA</b></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>Bachelor of Technology in Information Technology</b></p>
+<p>Sri Venkateswara College of Engineering (SVCE), Anna University	</p>
+<p><b>CGPA: 6.53/10  </b></p>
+</td>
+<td>
+<p>Chennai, India</p>
+<p>May 2012</p>
+</td>
+</tr>
+</table>
+</div>
+<div class="section" id="section_id" onClick="showDiv('work_id')" style="cursor:pointer">
+<h4>Work Experience</h4>
+</div>
+<div class="work" id="work_id" style="display:none">
+<table>
+<tr>
+<td>
+<b>eHealth Global Technologies, Inc</b>
+<p>Software Development Intern</p>
+<ul>
+<ul>
+					 <li>Working as a member of an agile scrum team, performing tasks to contribute team success.</li>
+                                    <li>Performing functional and regression testing of commercialized application platform.</li>
+                                    <li>Working on development of RMS(Referral Management Solution) and RMS CE(Cloud Edition) a service of eHealth Technologies that allows a physician to refer patients to other physicians using eHealth Referral Portal Service, secure communication between referring physician and treating physician, sending and receiving patient records securely, retrieving patient records using eHealth Records Retrieval Service and manage the overall patient referral process. </li>
+                                    <li>Developing automation E2E(End-to-End) test using <b>Selenium IDE</b> to test RMS application which is developed using <b>ASP.NET</b> as front-end and <b>Microsoft SQL Server</b> as back-end.</li>
+                                    <li>Developing automation E2E(End-to-End) test using <b>Protractor</b> and unit testing using <b>Jasmine</b> test runner with <b>Karma</b> testing framework to test RMS CE which is developed using <b>AngularJS</b> as front-end and <b>MongoDB</b> as back-end.</li>
+					 <li><b>Technologies used : AngularJS, MongoDB, jQuery, C#.NET, SQL, Karma, Jasmine, Protractor, Selenium IDE, Visual Studio.</b>
+					 </ul>
+</ul>
+</td>
+<td>
+<p>January 2015 - Present</p>
+<p>Rochester, NY, USA</p>
+</td>
+</tr>
+</table>
+</div>
+<div class="section" id="section_id" onClick="showDiv('relatedproj_id')" style="cursor:pointer">
+<h4>Related Projects</h4>
+</div>
+<div class="relatedproj" id="relatedproj_id" style="display:none">
+<table>
+<tr>
+<td>
+<p><b>Secured Distributed Group Communication with leader election (Distributed Systems Course) </b></p>
+<ul>
+<li>Implemented a secure centralized authentication system for distributed group communication with effective Bully- Algorithm for electing a new leader when necessary using <b>Java Socket Programming</b>. </li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>Big Data Analytics Project (Big Data Analytics Course)</b></p>
+<ul>
+<li>Mined a Portuguese Banking Institution Dataset to help the bank with its marketing campaign on customers by following CRISP model for Data Mining. Used <b>WEKA</b> tool and wrote <b>Java</b> Programs for Data mining.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>Social Networking Ad suggestion (Big Data Course) </b></p>
+<ul>
+<li>Developed a Social Networking website and a shopping web site using <b>Html, CSS, Javascripts and Jsp</b> as front-end and <b>Oracle DB</b> as back-end. </li>
+<li>Data from shopping website was collected and mined to suggest deals to the users on their social networking website home page.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>Snake and Ladder Multiplayer game (Advanced Java Programming Course)</b></p>
+<ul>
+<li>Developed a multiplayer snake and ladder game using <b>Java RMI</b> and <b>Java Swings</b>.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>Generic Puzzle Solver (Advanced C++ and Programming Design Course) </b></p>
+<ul>
+<li>Implemented a generic puzzle solver which uses BFS(Breadth First Search) to solve puzzles like Jumping Peg, Towers of Hanoi using <b>C++</b>. </li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="section" id="section_id" onClick="showDiv('androidproj_id')" style="cursor:pointer">
+<h4>Android Projects</h4>
+</div>
+<div class="androidproj" id="androidproj_id" style="display:none">
+<table>
+<tr>
+<td>
+<p><b>Teacher App</b></p>
+<ul>
+<li>Developed an <b>Android application</b> for teachers to help manage different classes handled by them. Major functionalities of this app includes adding and removing of students and classes, taking attendance for a class, generating attendance report, unicast and broadcast a message to the students in the class.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>Dictionary App</b></p>
+<ul>
+<li>Developed a dictionary application on <b>Android</b> which displays the meaning and related words for a given word by accessing an external dictionary <b>API</b> and parsing the <b>XML</b> file received.</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="section" id="section_id" onClick="showDiv('tech_id')" style="cursor:pointer">
+<h4>Technical Skills</h4>
+</div>
+<div class="tech" id="tech_id" style="display:none">
+<table>
+<tr>
+<td><p>Progrmmaing Languages</p></td>
+<td><p><b>Java, Python, C++, C, C#.NET</b></p></td>
+</tr>
+<tr>
+<td><p>Web Programming</p></td>
+<td><p><b>HTML, CSS, AngularJS, JSP, Javascripts, jQuery, ASP.NET</b></p></td>
+</tr>
+<tr>
+<td><p>Databases</p></td>
+<td><p><b>MySql, Oracle, MongoDB</b></p></td>
+</tr>
+<tr>
+<td><p>Testing</p></td>
+<td><p><b>Selenium IDE, Protractor, Karma</b></p></td>
+</tr>
+<tr>
+<td><p>Development Environments</p></td>
+<td><p><b>Netbeans, Eclipse, Visual Studio, Dreamweaver</b></p></td>
+</tr>
+<tr>
+<td><p>Operating Systems</p></td>
+<td><p><b>Linux, Windows</b></p></td>
+</tr>
+<tr>
+<td><p>Mobile Application Development</p></td>
+<td><p><b>Android </b></p></td>
+</tr>
+</table>
+</div>
+</div>
+</body>
+</html>
